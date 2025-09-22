@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Vida Saudável</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background: #0077b6;
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        header p {
+            font-size: 1.2rem;
+        }
+        section {
+            padding: 2rem;
+            max-width: 1000px;
+            margin: auto;
+        }
+        h2 {
+            color: #0077b6;
+            margin-bottom: 1rem;
+        }
+        .servicos img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+            margin: 1rem 0;
+        }
+        .equipe {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+        .membro {
+            background: white;
+            padding: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
+            width: 250px;
+        }
+        .membro img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            max-width: 400px;
+            margin: auto;
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        input, select {
+            padding: 0.6rem;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 0.8rem;
+            background: #0077b6;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        button:hover {
+            background: #005f87;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #0077b6;
+            color: white;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Clínica Vida Saudável</h1>
+        <p>Cuidando da sua saúde com carinho e profissionalismo</p>
+    </header>
+
+    <section class="servicos">
+        <h2>Nossos Serviços</h2>
+        <p>Na Clínica Vida Saudável, oferecemos atendimento especializado em diversas áreas da saúde. 
+        Nosso objetivo é garantir bem-estar físico e emocional para você e sua família.</p>
+        
+        <img src="img/consultas_medicas.jpeg" alt="Consulta médica">
+               <h2>Consultas Medicas e Laboratoriais</h2>
+   <img src="img/exames laboratoriais.jpeg" alt="Exames laboratoriais">
+    </section>
+
+    <section class="equipe">
+        <h2>Nossa Equipe</h2>
+        <div class="membro">
+            <img src="img/doutor_geral.jpeg" alt="Foto Dr. João">
+            <h3>Dr. João Silva</h3>
+            <p>Médico Clínico Geral</p>
+        </div>
+        <div class="membro">
+            <img src="img/doutora_nutri.jpeg" alt="Foto Dra. Maria">
+            <h3>Dra. Maria Souza</h3>
+            <p>Nutricionista</p>
+        </div>
+        <div class="membro">
+            <img src="img/doutor_fisio.jpeg" alt="Foto Dr. Pedro">
+            <h3>Dr. Pedro Almeida</h3>
+            <p>Fisioterapeuta</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Cadastro</h2>
+        <form>
+            <input type="text" name="nome" placeholder="Nome completo" required>
+            <input type="email" name="email" placeholder="E-mail" required>
+            <input type="text" name="cidade" placeholder="Cidade" required>
+            <select name="estado" required>
+                <option value="">Selecione o Estado</option>
+                <option value="DF">DF</option>
+                <option value="SP">SP</option>
+                <option value="RJ">RJ</option>
+                <option value="MG">MG</option>
+                <option value="RS">RS</option>
+                <option value="BA">BA</option>
+            </select>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Clínica Vida Saudável - Todos os direitos reservados</p>
+    </footer>
+
+</body>
+</html>
